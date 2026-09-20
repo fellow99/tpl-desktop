@@ -1,0 +1,4 @@
+# pnpm 工作区配置（当前为单包仓库，根目录即唯一包）
+packages: []
+allowBuilds:
+  '@parcel/watcher': false

@@ -1,0 +1,36 @@
+{
+  "name": "tpl-desktop",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@imengyu/vue3-context-menu": "^1.5.2",
+    "@number-flow/vue": "^0.4.8",
+    "dayjs": "^1.11.19",
+    "element-plus": "^2.11.7",
+    "element-resize-detector": "^1.2.4",
+    "embla-carousel-vue": "^8.6.0",
+    "gridstack": "^11.5.1",
+    "jsencrypt": "^3.5.4",
+    "jsonpath-plus": "^10.3.0",
+    "lodash": "^4.17.21",
+    "mitt": "^3.0.1",
+    "pinia": "^4.0.2",
+    "swiper": "^14.0.1",
+    "three": "^0.183.2",
+    "vue": "^3.5.39",
+    "vue3-markdown": "^1.2.17",
+    "wujie": "^2.1.0",
+    "wujie-vue3": "^2.1.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^6.0.8",
+    "sass": "^1.101.0",
+    "vite": "^8.1.4"
+  }
+}

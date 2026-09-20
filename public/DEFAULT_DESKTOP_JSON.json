@@ -1,0 +1,16 @@
+{
+  "theme": "light",
+  "font-size": "16px",
+  "grid": {
+    "cols": 12,
+    "rows": 8
+  },
+  "background": null,
+  "pages": [
+    {
+      "title": "",
+      "children": []
+    }
+  ],
+  "shortcuts": []
+}

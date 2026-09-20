@@ -1,0 +1,147 @@
+// ============================================================
+// 005-theme: --desktop-* CSS 变量体系（与 Element Plus 的 --el-* 前缀区分）
+// 浅色 :root → 深色 html.dark，CSS 级联自动切换
+// 完整变量清单见 docs/theme-var.md
+// ============================================================
+
+// ==================== 浅色主题（默认 / 降级基准） ====================
+
+:root {
+  color-scheme: light;
+
+  /* 主色调 */
+  --desktop-color-primary: #007acc;
+  --desktop-color-primary-hover: #0088dd;
+  --desktop-color-danger: #d73a49;
+  --desktop-color-danger-hover: #e85662;
+  --desktop-color-success: #00cc7a;
+  --desktop-color-success-hover: #62e856;
+
+  // ==================== 全局背景与文字 ====================
+  --desktop-bg-primary:          #f0f2f5;
+  --desktop-bg-secondary:        #ffffff;
+  --desktop-bg-tertiary:         #f8f9fa;
+  --desktop-bg-overlay:          #ffffff;
+  --desktop-text-primary:        #1a1a2e;
+  --desktop-text-secondary:      #666680;
+  --desktop-text-muted:          #999aaa;
+  --desktop-text-disabled:       #c0c4cc;
+  --desktop-shadow:              0 4px 24px rgba(0, 0, 0, 0.08);
+  --desktop-shadow-sm:           0 2px 8px rgba(0, 0, 0, 0.06);
+
+  // ==================== 边框 ====================
+  --desktop-border:              rgba(0, 0, 0, 0.08);
+  --desktop-border-light:        rgba(0, 0, 0, 0.04);
+
+  // ==================== 强调色 ====================
+  --desktop-accent:              #1890ff;
+  --desktop-accent-dim:          rgba(24, 144, 255, 0.12);
+  --desktop-danger:              #e53935;
+  --desktop-success:             #43a047;
+  --desktop-warning:             #fb8c00;
+
+  // ==================== 编辑器界面 ====================
+  --desktop-bg-header:           #f5f5f5;
+  --desktop-bg-grid:             #fafafa;
+  --desktop-grid-item-bg:        #ffffff;
+
+  // ==================== Widget 外框 ====================
+  --desktop-widget-header-bg:    #409EFF;
+  --desktop-widget-header-text:  #ffffff;
+  --desktop-widget-content-bg:   #ffffff;
+
+  // ==================== 工具栏 ====================
+  --desktop-toolbar-bg:          rgba(255, 255, 255, 0.85);
+  --desktop-toolbar-blur:        blur(12px);
+  --desktop-toolbar-border:      rgba(0, 0, 0, 0.06);
+
+  // ==================== 卡片 ====================
+  --desktop-card-bg:             rgba(255, 255, 255, 0.85);
+  --desktop-card-bg-hover:       rgba(255, 255, 255, 0.95);
+  --desktop-card-border:         rgba(0, 0, 0, 0.06);
+
+  // ==================== 交互状态 ====================
+  --desktop-overlay:             rgba(0, 0, 0, 0.15);
+  --desktop-hover-bg:            rgba(0, 0, 0, 0.04);
+  --desktop-active-bg:           rgba(24, 144, 255, 0.12);
+  --desktop-icon-color:          #666680;
+
+  // ==================== 状态栏 ====================
+  --desktop-statusbar-bg:        linear-gradient(to bottom, rgba(255, 255, 255, 0.40), transparent);
+
+  // ==================== 毛玻璃 ====================
+  --desktop-glass-bg:            rgba(255, 255, 255, 0.45);
+  --desktop-glass-border:        rgba(255, 255, 255, 0.18);
+  --desktop-glass-blur:          blur(12px);
+}
+
+// ==================== 深色主题（html.dark 覆盖 :root） ====================
+
+html.dark {
+  color-scheme: dark;
+
+  /* 主色调 */
+  --desktop-color-primary: #007acc;
+  --desktop-color-primary-hover: #0088dd;
+  --desktop-color-danger: #d73a49;
+  --desktop-color-danger-hover: #e85662;
+  --desktop-color-success: #00cc7a;
+  --desktop-color-success-hover: #62e856;
+
+  // ==================== 全局背景与文字 ====================
+  --desktop-bg-primary:          #0f0f1a;
+  --desktop-bg-secondary:        #1a1a2e;
+  --desktop-bg-tertiary:         #16213e;
+  --desktop-bg-overlay:          #1d1e1f;
+  --desktop-text-primary:        #e0e0e0;
+  --desktop-text-secondary:      #a0a0b0;
+  --desktop-text-muted:          #606070;
+  --desktop-text-disabled:       #6c6e72;
+  --desktop-shadow:              0 4px 24px rgba(0, 0, 0, 0.4);
+  --desktop-shadow-sm:           0 2px 8px rgba(0, 0, 0, 0.3);
+
+  // ==================== 边框 ====================
+  --desktop-border:              rgba(255, 255, 255, 0.08);
+  --desktop-border-light:        rgba(255, 255, 255, 0.04);
+
+  // ==================== 强调色 ====================
+  --desktop-accent:              #4FC3F7;
+  --desktop-accent-dim:          rgba(79, 195, 247, 0.15);
+  --desktop-danger:              #ff5252;
+  --desktop-success:             #66bb6a;
+  --desktop-warning:             #ffa726;
+
+  // ==================== 编辑器界面 ====================
+  --desktop-bg-header:           #16213e;
+  --desktop-bg-grid:             #0f3460;
+  --desktop-grid-item-bg:        #1a1a2e;
+
+  // ==================== Widget 外框 ====================
+  --desktop-widget-header-bg:    #3370ff;
+  --desktop-widget-header-text:  #e5eaf3;
+  --desktop-widget-content-bg:   #16213e;
+
+  // ==================== 工具栏 ====================
+  --desktop-toolbar-bg:          rgba(20, 20, 40, 0.85);
+  --desktop-toolbar-blur:        blur(12px);
+  --desktop-toolbar-border:      rgba(255, 255, 255, 0.06);
+
+  // ==================== 卡片 ====================
+  --desktop-card-bg:             rgba(26, 26, 46, 0.75);
+  --desktop-card-bg-hover:       rgba(30, 30, 55, 0.85);
+  --desktop-card-border:         rgba(255, 255, 255, 0.06);
+
+  // ==================== 交互状态 ====================
+  --desktop-overlay:             rgba(0, 0, 0, 0.45);
+  --desktop-hover-bg:            rgba(255, 255, 255, 0.06);
+  --desktop-active-bg:           rgba(79, 195, 247, 0.2);
+  --desktop-icon-color:          #a0a0b0;
+
+  // ==================== 状态栏 ====================
+  --desktop-statusbar-bg:        linear-gradient(to bottom, rgba(0, 0, 0, 0.40), transparent);
+
+  // ==================== 毛玻璃 ====================
+  --desktop-glass-bg:            rgba(255, 255, 255, 0.08);
+  --desktop-glass-border:        rgba(255, 255, 255, 0.12);
+  --desktop-glass-blur:          blur(12px);
+}

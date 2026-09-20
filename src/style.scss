@@ -1,0 +1,17 @@
+// 主题 CSS 变量（005-theme）：--desktop-* 体系（完整清单见 docs/theme-var.md）
+// 浅色定义于 :root 块，深色定义于 html.dark 块，CSS 级联自动切换
+@use './style/theme-var.scss';
+
+// 全局样式重置
+html,
+body,
+#app {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background: var(--desktop-bg-primary);
+  color: var(--desktop-text-primary);
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}

@@ -1,0 +1,14 @@
+{
+  "plugins": [
+    {
+      "name": "tpl-desktop-plugin-demo",
+      "title": "tpl-desktop-plugin-demo",
+      "category": "DEMO",
+      "url": "/tpl-desktop-plugin-demo/",
+      "alive": true,
+      "exec": false,
+      "fiber": true,
+      "disabled": false
+    }
+  ]
+}
